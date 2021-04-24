@@ -28,7 +28,6 @@ def main():
         # download subtitle file
         with open( f"{playlist_info['playlist']['name']}/{base_name}.vtt",'w') as f:
             f.write(requests.get(vtt_file_url).text)
-        return
 
 
 if __name__ == "__main__":
